@@ -96,3 +96,8 @@ donationTab.addEventListener('click', function () {
 document.getElementById('blog-btn').addEventListener('click', function () {
   window.location.href = './faq.html';
 });
+
+// back home 
+document.getElementById('back-home').addEventListener('click', function () {
+  console.log('clicked');
+});
