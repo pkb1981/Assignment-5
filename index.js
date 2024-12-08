@@ -36,3 +36,13 @@ const donateNow3 = document.getElementById('btn-donate3').addEventListener('clic
   const depositOutstanding = document.getElementById('deposit').innerText = deposit.toFixed(2);
 
 });
+
+// donation and history tab design
+
+const historyTab = document.getElementById('history-tab');
+const donationTab = document.getElementById('donation-tab');
+historyTab.addEventListener('click', function () {
+  historyTab.classList.add('bg-[rgb(180,244,97)]', 'text-black');
+  historyTab.classList.remove('btn', 'btn-outline')
+
+});
