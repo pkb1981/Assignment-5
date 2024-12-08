@@ -2,6 +2,12 @@
 
 const donateNow1 = document.getElementById('btn-donate1').addEventListener('click', function () {
   const donationInput = parseFloat(document.getElementById('donation-input1').value);
+
+  // input validation cheque
+  if (donationInput <= 0 || isNaN(donationInput)) {
+    alert('please enter a valid input');
+  }
+
   let donation = parseFloat(document.getElementById('donation-amount1').innerText);
   let deposit = parseFloat(document.getElementById('deposit').innerText);
   donation = donation + donationInput;
@@ -16,6 +22,10 @@ const donateNow1 = document.getElementById('btn-donate1').addEventListener('clic
 
 const donateNow2 = document.getElementById('btn-donate2').addEventListener('click', function () {
   const donationInput = parseFloat(document.getElementById('donation-input2').value);
+  // input validation cheque
+  if (donationInput <= 0 || isNaN(donationInput)) {
+    alert('please enter a valid input');
+  }
   let donation = parseFloat(document.getElementById('donation-amount2').innerText);
   let deposit = parseFloat(document.getElementById('deposit').innerText);
   donation = donation + donationInput;
@@ -30,6 +40,10 @@ const donateNow2 = document.getElementById('btn-donate2').addEventListener('clic
 
 const donateNow3 = document.getElementById('btn-donate3').addEventListener('click', function () {
   const donationInput = parseFloat(document.getElementById('donation-input3').value);
+  // input validation cheque
+  if (donationInput <= 0 || isNaN(donationInput)) {
+    alert('please enter a valid input');
+  }
   let donation = parseFloat(document.getElementById('donation-amount3').innerText);
   let deposit = parseFloat(document.getElementById('deposit').innerText);
   donation = donation + donationInput;
