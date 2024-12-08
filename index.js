@@ -8,7 +8,8 @@ const donateNow1 = document.getElementById('btn-donate1').addEventListener('clic
   deposit = deposit - donationInput;
   const donationOutstanding = document.getElementById('donation-amount1').innerText = donation.toFixed(2);
   const depositOutstanding = document.getElementById('deposit').innerText = deposit.toFixed(2);
-
+  // modal button activation
+  modalButton.click();
 });
 
 // donation now button feni
@@ -21,7 +22,8 @@ const donateNow2 = document.getElementById('btn-donate2').addEventListener('clic
   deposit = deposit - donationInput;
   const donationOutstanding = document.getElementById('donation-amount2').innerText = donation.toFixed(2);
   const depositOutstanding = document.getElementById('deposit').innerText = deposit.toFixed(2);
-
+  // modal button activation
+  modalButton.click();
 });
 
 // donation now button quota
@@ -34,7 +36,8 @@ const donateNow3 = document.getElementById('btn-donate3').addEventListener('clic
   deposit = deposit - donationInput;
   const donationOutstanding = document.getElementById('donation-amount3').innerText = donation.toFixed(2);
   const depositOutstanding = document.getElementById('deposit').innerText = deposit.toFixed(2);
-
+  // modal button activation
+  modalButton.click();
 });
 
 // donation and history tab design
@@ -47,5 +50,6 @@ historyTab.addEventListener('click', function () {
 
 });
 
-
+// modal activation by clicking a button
+const modalButton = document.getElementById('modal-donate');
 
