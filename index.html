@@ -24,73 +24,75 @@
     </div>
     <div class="navbar-end">
       <img width="5%" src="./assets/coin.png" alt="">
-      <p id="deposit" class="mx-2 font-semibold text-black">5500</p><span class="font-semibold text-black">BDT</span>
+      <p id="deposit" class="mx-2 font-semibold text-black">10500</p><span class="font-semibold text-black">BDT</span>
     </div>
   </div>
   <!-- navbar section ends -->
-  <!-- donation & history button section start -->
+  <!-- donation & history tab section start -->
   <div class="flex justify-center my-20 gap-x-3">
 
     <button id="donation-tab" class="bg-[rgb(180,244,97)] text-black py-1 px-8 rounded-lg font-bold">Donation</button>
     <button id="history-tab" class="btn btn-outline py-1 px-8 rounded-lg font-bold">History</button>
   </div>
   <section id="donation-tab-property">
-    <!-- donation & history button section end -->
+    <!-- donation & history tab section end -->
     <!-- 3 card section start -->
     <!-- noakhali -->
-    <div class="m-8 flex justify-center gap-x-8">
-      <div class="w-1/2">
-        <img class="w-full h-auto" src="./assets/noakhali.png" alt="">
+    <div class="m-8 flex flex-col sm:flex-row justify-center gap-y-8 sm:gap-x-8">
+
+      <div class="w-full sm:w-1/2">
+        <img class="w-full h-auto" src="./assets/noakhali.png" alt="Noakhali Flood">
       </div>
-      <div class="w-1/2">
-        <div class=" pl-2 mb-3 flex items-center justify-start rounded-lg bg-slate-400 w-32">
-          <img class="w-3 h-3" src="./assets/coin.png" alt="">
+
+      <div class="w-full sm:w-1/2">
+        <div class="pl-2 mb-3 flex items-center justify-start rounded-lg bg-slate-400 w-full sm:w-32">
+          <img class="w-3 h-3" src="./assets/coin.png" alt="Coin">
           <p id="donation-amount1" class="mx-2 font-semibold text-black">0</p><span
             class="font-semibold text-black">BDT</span>
         </div>
         <div>
           <h3 class="mb-3 text-xl font-bold text-black">Donate for Flood at Noakhali, Bangladesh</h3>
-          <p class="mb-3"> The recent floods in Noakhali have caused significant damage to
-            homes
-            infrastructure. Your
-            donation will
-            help
-            provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes
-            difference. Please join us in supporting the relief efforts and making a positive impact on the lives of
-            those
-            in need.</p>
-          <input id="donation-input1" class="w-96 rounded p-3 bg-white text-sm mb-3" type="number" value=""
+          <p class="mb-3">The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your
+            donation will help provide essential supplies to those affected by this disaster. Every contribution, big or
+            small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on
+            the lives of those in need.</p>
+          <input id="donation-input1" class="w-full sm:w-96 rounded p-3 bg-white text-sm mb-3" type="number" value=""
             placeholder="Write Donation Amount">
           <button id="btn-donate1"
-            class="flex items-center justify-center bg-[rgb(180,244,97)] text-black py-1 px-6 rounded-lg font-bold w-96 h-10">Donate
-            Now</button>
-
-          <!-- modal section for donation button start -->
-          <button id="modal-donate" class="btn hidden" onclick="my_modal_1.showModal()">Donate
-            Now</button>
-          <dialog id="my_modal_1" class="modal">
-            <div class="modal-box bg-gray-200">
-              <h3 class="text-2xl text-black text-center font-bold">Congrates!</h3>
-              <p class="py-4 text-center">You have donated for humankind</p>
-              <p class="text-center text-black text-xl font-semibold">Successfully</p>
-              <div class="modal-action justify-center ">
-                <form method="dialog">
-                  <button class="btn bg-white text-black">Close Confirmation</button>
-                </form>
-              </div>
-            </div>
-          </dialog>
-          <!-- modal section for donation button end -->
+            class="flex items-center justify-center bg-[rgb(180,244,97)] text-black py-1 px-6 rounded-lg font-bold w-full sm:w-96 h-10">
+            Donate Now
+          </button>
         </div>
       </div>
     </div>
+
+
+    <!-- modal section for donation button start -->
+    <button id="modal-donate" class="btn hidden" onclick="my_modal_1.showModal()">Donate
+      Now</button>
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box bg-gray-200">
+        <h3 class="text-2xl text-black text-center font-bold">Congrates!</h3>
+        <p class="py-4 text-center">You have donated for humankind</p>
+        <p class="text-center text-black text-xl font-semibold">Successfully</p>
+        <div class="modal-action justify-center ">
+          <form method="dialog">
+            <button class="btn bg-white text-black">Close Confirmation</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <!-- modal section for donation button end -->
+    </div>
+    </div>
+    </div>
     <!-- Feni -->
-    <div class="m-8 flex justify-center gap-x-8">
-      <div class="w-1/2">
+    <div class="m-8 flex flex-col sm:flex-row justify-center gap-y-8 sm:gap-x-8">
+      <div class="w-full sm:w-1/2">
         <img class="w-full h-auto" src="./assets/feni.png" alt="">
       </div>
-      <div class="w-1/2">
-        <div class=" pl-2 mb-3 flex items-center justify-start rounded-lg bg-slate-400 w-32">
+      <div class="w-full sm:w-1/2">
+        <div class=" pl-2 mb-3 flex items-center justify-start rounded-lg bg-slate-400 w-full sm:w-32">
           <img class="w-3 h-3" src="./assets/coin.png" alt="">
           <p id="donation-amount2" class="mx-2 font-semibold text-black">0</p><span
             class="font-semibold text-black">BDT</span>
@@ -103,21 +105,21 @@
             in
             the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider
             donating today to assist those in urgent need.</p>
-          <input id="donation-input2" class="w-96 rounded p-3 bg-white text-sm mb-3" type="number" value=""
+          <input id="donation-input2" class="w-full sm:w-96 rounded p-3 bg-white text-sm mb-3" type="number" value=""
             placeholder="Write Donation Amount">
           <button id="btn-donate2"
-            class="flex items-center justify-center bg-[rgb(180,244,97)] text-black py-1 px-6 rounded-lg font-bold w-96 h-10">Donate
+            class="flex items-center justify-center bg-[rgb(180,244,97)] text-black py-1 px-6 rounded-lg font-bold w-full sm:w-96 h-10">Donate
             Now</button>
         </div>
       </div>
     </div>
     <!-- Quota -->
-    <div class="m-8 flex justify-center gap-x-8">
-      <div class="w-1/2">
-        <img class="w-full h-auto" src="./assets/quota-protest.png" alt="">
+    <div class="m-8 flex flex-col sm:flex-row justify-center gap-y-8 sm:gap-x-8">
+      <div class="w-full sm:w-1/2">
+        <img class="w-full  h-auto" src="./assets/quota-protest.png" alt="">
       </div>
-      <div class="w-1/2">
-        <div class=" pl-2 mb-3 flex items-center justify-start rounded-lg bg-slate-400 w-32">
+      <div class="w-full sm:w-1/2">
+        <div class=" pl-2 mb-3 flex items-center justify-start rounded-lg bg-slate-400 w-full sm:w-32">
           <img class="w-3 h-3" src="./assets/coin.png" alt="">
           <p id="donation-amount3" class="mx-2 font-semibold text-black">0</p><span
             class="font-semibold text-black">BDT</span>
@@ -132,15 +134,22 @@
             aiding
             in their recovery. Please consider making a donation to support these brave individuals in their time of
             need.</p>
-          <input id="donation-input3" class="w-96 rounded p-3 bg-white text-sm mb-3" type="number" value=""
+          <input id="donation-input3" class="w-full sm:w-96 rounded p-3 bg-white text-sm mb-3" type="number" value=""
             placeholder="Write Donation Amount">
           <button id="btn-donate3"
-            class="flex items-center justify-center bg-[rgb(180,244,97)] text-black py-1 px-6 rounded-lg font-bold w-96 h-10">Donate
+            class="flex items-center justify-center bg-[rgb(180,244,97)] text-black py-1 px-6 rounded-lg font-bold w-full sm:w-96 h-10">Donate
             Now</button>
         </div>
       </div>
     </div>
     <!-- 3 card section end -->
+  </section>
+
+  <!-- History section started by creating history dynamically -->
+  <section>
+    <div id="donation-history" class="grid grid-rows-3 gap-4">
+
+    </div>
   </section>
   <script src="./index.js"></script>
 </body>

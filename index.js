@@ -89,7 +89,17 @@ donationTab.addEventListener('click', function () {
   historyTab.classList.add('btn', 'btn-outline');
   // hide the default from history tab
   document.getElementById('donation-tab-property').classList.remove('hidden');
-
 });
 
+// creating a div for showing donation history
+const historyItem = document.createElement('div');
 
+historyItem.className = 'bg-white p-3 rounded-md border-1-2 border-indigo-500';
+
+historyItem.innerHTML = `
+<p class='text-xs text-black' >${(donation - input1).toFixed(2)}</p >
+  <p class='text-xs text-gray-500' > ${new Date().toLocaleDateString()}</p>
+`;
+
+const historyContainer = document.getElementById('donation-history');
+historyContainer.appendChild(historyItem);
